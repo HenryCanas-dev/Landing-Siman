@@ -236,3 +236,12 @@ padding:20px ;
 .btn-aplicar :hover {
     background-color: #c00;
 }
+
+/*Logo Footer*/
+.Logo-footer {
+    position: bottom;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
