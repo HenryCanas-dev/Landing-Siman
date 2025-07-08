@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebajas</title>
+    <title>Cuotas sin Intereses</title>
     <link rel="stylesheet" href="SimanStyle.css">
 </head>
 
@@ -35,68 +35,77 @@
             <li>Belleza</li>
         </ul>
     </nav>
-    <section class="banner">
-        <img src="IMG/Crazy week.gif" alt="Crazy week" class="banner-GIF">
-    </section>
     <div class="contenido-principal">
-        <aside class="Promo-lateral">
-            <img src="IMG/Crazy Week.webp" alt="Crazy week promo" class="IMG-promo-lateral">
-            <h2>Dormitorio y Hogar</h2>
-            <p>Decoración, Muebles y más</p>
+        <aside class="menu-filtros">
+            <h2>Filtros</h2>
+
+            <div class="filtros">
+                <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label><br>
+                <label><input type="checkbox" name="categoria" value="zapatos"> Zapatos</label><br>
+                <label><input type="checkbox" name="categoria" value="electrodomesticos"> Electrodomésticos</label><br>
+                <label><input type="checkbox" name="categoria" value="Juguetes"> Juguetes</label><br>
+                <label><input type="checkbox" name="categoria" value="Linea Blanca">Linea Blanca</label><br>
+                <label><input type="checkbox" name="categoria" value="Muebles">Muebles</label><br>
+                <label><input type="checkbox" name="categoria" value="Exclusivo Online">Exclusivo Online</label><br>
+            </div>
+            <div class="filtros">
+                <h3>Precio</h3>
+                <label><input type="radio" name="precio" value="0-25"> $0 - $25</label><br>
+                <label><input type="radio" name="precio" value="26-50"> $26 - $50</label><br>
+                <label><input type="radio" name="precio" value="51-200"> $51 - $200</label><br>
+                <label><input type="radio" name="precio" value="201-500"> $51 - $200</label><br>
+            </div>
+
+            <button class="btn-aplicar">Aplicar Filtros</button>
+
         </aside>
         <main class="Productos">
             <div class="Item">
                 <div class="img-container">
-                    <img src="IMG/Moda Mujer.avif" alt="Moda Mujer" class="img-principal">
-                    <img src="IMG/Moda Mujer 2.jpg" alt="Mujer Alternative" class="img-hover">
+                    <img src="IMG/Xiaomi TV.webp" alt="Xiaomi TV" class="img-main">
                 </div>
-                <h4>Moda Verano Mujer</h4>
+                <h3>Xiaomi</h3>
+                <p class="Pantalla Xiaomi">Pantalla Xiaomi 50" LED UHD 4K A 2025</p>
+                <div class="precios">
+                    <span class="precio-anterior">$599.00</span>
+                    <span class="precio-descuento">$429.00</span>
+                    <span class="descuento">-28%</span>
+                </div>
+                <span class="cuotas">Hasta 24 cuotas</span>
+                <button class="btn-carrito">Agregar al carrito</button>
             </div>
 
             <div class="Item">
                 <div class="img-container">
-                    <img src="IMG/Moda Hombre.webp" alt="Moda Hombre" class="img-principal">
-                    <img src="IMG/Moda Hombre 2.avif" alt="Hombre Alternative" class="img-hover">
+                    <img src="IMG/Aire Acondicionado.webp" alt="Samsung AC" class="img-main">
                 </div>
-                <h4>Moda Verano Hombre</h4>
+                <h3>Samsung</h3>
+                <p class="Samsung AC">Aire Acondicionado Mini Split Samsung</p>
+                <div class="precios">
+                    <span class="precio-anterior">$649.00</span>
+                    <span class="precio-descuento">$539.00</span>
+                    <span class="descuento">-17%</span>
+                </div>
+                <span class="cuotas">Hasta 24 cuotas</span>
+                <button class="btn-carrito">Agregar al carrito</button>
             </div>
-
             <div class="Item">
                 <div class="img-container">
-                    <img src="IMG/Zapatos.jpg" alt="Moda Zapatos" class="img-principal">
-                    <img src="IMG/Zapatos 2.webp" alt="Zapatos Alternative" class="img-hover">
+                    <img src="IMG/Muebles.webp" alt="Sala" class="img-main">
                 </div>
-                <h4>Moda Zapatos</h4>
+                <h3>Cindra</h3>
+                <p class="Cindra Sala">Sala esquinera Cindra</p>
+                <div class="precios">
+                    <span class="precio-anterior">$999.00</span>
+                    <span class="precio-descuento">$599.00</span>
+                    <span class="descuento">-40%</span>
+                </div>
+                <span class="cuotas">Hasta 24 cuotas</span>
+                <button class="btn-carrito">Agregar al carrito</button>
             </div>
 
-            <div class="Item">
-                <div class="img-container">
-                    <img src="IMG/Tecnologia.avif" alt="Tecnologia" class="img-principal">
-                    <img src="IMG/Tecnologia 2.avif" alt="Tecnologia Alternative" class="img-hover">
-                </div>
-                <h4>Tecnologia</h4>
-            </div>
-
-            <div class="Item">
-                <div class="img-container">
-                    <img src="IMG/Linea blanca.webp" alt="Linea Blanca" class="img-principal">
-                    <img src="IMG/linea blanca 2.jpg" alt="Linea Blanca Alternative" class="img-hover">
-                </div>
-                <h4>Linea Blanca</h4>
-            </div>
-
-            <div class="Item">
-                <div class="img-container">
-                    <img src="IMG/Belleza.webp" alt="Belleza" class="img-principal">
-                    <img src="IMG/Belleza 2.webp" alt="Belleza 2" class="img-hover">
-                </div>
-                <h4>Belleza</h4>
-            </div>
-
+        </main>
     </div>
-
-    </main>
-
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -147,7 +156,6 @@
 
             </div>
     </footer>
-
 </body>
 
 </html>
