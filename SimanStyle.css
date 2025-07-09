@@ -71,11 +71,8 @@ nav li:hover {
 /* Banner Star Wars*/
 
 .banner {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     position: relative;
-    width: 100%;
-}
-
-.banner {
     width: 100%;
     height: auto;
     display: block;
@@ -119,14 +116,12 @@ nav li:hover {
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
-    /* Centrado exacto */
     color: #c00(253, 176, 113);
     font-family: 'Star Wars', sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    /* Para que el texto resalte */
     z-index: 2;
 }
 
@@ -145,6 +140,7 @@ main.Productos {
 }
 
 .Item {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -248,7 +244,6 @@ main.Productos {
 /*Logo Footer*/
 
 .Logo-footer {
-    position: bottom;
     top: 20px;
     left: 20px;
     width: 150px;
@@ -407,4 +402,80 @@ main.Productos {
 .footer-columns li:hover {
     color: #c00;
     text-decoration: underline;
+}
+
+/* Media Responsive telefonos */
+@media screen and (max-width: 600px) {
+  .contenido-principal {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu-filtros {
+    width: 100%;
+    position: static;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  main.Productos {
+    grid-template-columns: 1fr;
+  }
+
+  .Texto-sobre-banner {
+    font-size: 20px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .boton-comprar {
+    font-size: 16px;
+    padding: 8px 14px;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .logo-sobre-banner {
+    width: 100px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-container,
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .Barra-busqueda {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .Item {
+    height: auto;
+  }
+
+  .img-container {
+    height: 200px;
+  }
 }
